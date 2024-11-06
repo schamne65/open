@@ -1,0 +1,35 @@
+.nav-mobile{display: none;}
+@media screen and (max-width:1025px) {
+.user-info{cursor:pointer}
+.nav-mobile{
+position: absolute;
+height: 0;
+background:#3b82f6;
+color: #fff;
+right: 0;
+top: 110px;
+width: 150px;
+cursor: pointer;
+z-index: 1;
+display: flex;
+transition:all  0.3s;
+opacity: 0;
+ul{
+    cursor: pointer;
+    padding: 10px 20px;
+    opacity: 0;
+   //display: none;
+   a{color:#fff}
+}
+}
+.nav-mobile.open{
+    height: auto;
+    opacity: 1;
+   
+   
+    ul{
+    opacity: 1;
+     display: inline-block;
+    }
+}
+}

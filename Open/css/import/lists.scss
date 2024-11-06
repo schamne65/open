@@ -1,0 +1,22 @@
+.lists,.products{
+    .main-container{
+        
+        align-items: start;
+      article{
+        overflow-x:auto;
+        padding:20px;
+        
+      }
+       h4{
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 20px 0;
+       }
+       .table tr:first-child{background-color:#60a5fa;color:#f2f2f2;box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        th{padding: 20px; border: 1px solid;border-radius:5px}}
+        th{
+            border: 1px solid;padding: 10px 15px;border-radius:5px;box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);max-width: 250px;min-width: 90px;
+            
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.paginador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+        li{
+            position: relative;
+            
+        }
+        a{
+
+            font-weight: 700;
+            width: 22px;
+            height: 22px;
+            text-align: center;
+           
+            
+        }
+        a.active::before{
+            
+            background: #3b82f6;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            padding: 2px;
+            display: block;
+            content: "";
+            bottom: 8px;
+          
+            position: absolute;       
+            z-index: -1;
+        }
+        a.active{
+            color: #fff;
+        }
+    }
+}
