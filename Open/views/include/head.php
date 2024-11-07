@@ -28,7 +28,7 @@ if (isset($_GET['views']) && (
     preg_match('/^nueva-venta/', $_GET['views']) 
 
 )) {
-    $body['class'] .= " ventas";
+    $body['class'] .= " ventas-interior";
 }
 
 

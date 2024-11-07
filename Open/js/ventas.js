@@ -67,7 +67,7 @@ $(document).ready(function(){
                 <input type="text" id="${prodcutoVendidoNombre}" name="${prodcutoVendidoNombre}" value="${nombre}">
                 <label for="${productoVendidoCantidad}">Cantidad</label>
                 <input type="text" id="${productoVendidoCantidad}" name="${productoVendidoCantidad}" value="${venta}">
-                <label for="${precioPorCantidad}">Precio</label>
+                <label for="${precioPorCantidad}">Costo</label>
                 <input type="text" id="${precioPorCantidad}" name="${precioPorCantidad}" value="${multiplo}">
                 <span class="eliminar_input">❌</span>
             </div>`;
@@ -88,14 +88,13 @@ $(document).ready(function(){
         }
 
         $(".eliminar_input").click(function(){
+            let precioEliminado = parseFloat($(this).closest('.div-input-dom').find('input[type="text"]:last').val());
+            total_venta -= precioEliminado;
             $(this).closest('.div-input-dom').remove();
-            $('#total').text('Total: $' + totalVenta.toFixed(2));
+            $('#total').text('Total: $' + total_venta.toFixed(2));
         });
       
-        let total= `
-        <p>total ${total_venta} </p>
-    
-         `;
+       
          
          $('#total').text('Total: $' + total_venta.toFixed(2));
     }

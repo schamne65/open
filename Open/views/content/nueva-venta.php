@@ -14,10 +14,11 @@ $peticionAjax=true;
 <div class="form-grid">
 <div class="div-search" >
 <h2>Vender Producto</h2>
-    <div class="div-search">
+    <div class="div-search-1">
         <h4>Seleccionar por </h4>
-        <form  class="formularioAjax" action="<?php echo SERVERURL ; ?>ajax/cargaAjax.php" method="POST" data-form="update">
+        <form  class="formularioAjax" action="<?php echo SERVERURL ; ?>ajax/ventasAjax.php" method="POST" data-form="save">
             <input type="hidden" name="producto_vendido" id="producto_vendido">
+            <input type="hidden" name="id-venta-1" id="id-venta-1" value="1">
             <label for="nombre_insumo">Nombre</label>
             <input type="text" id="nombre_insumo" name="nombre_insumo">
             <label for="id_insumo">ID</label>
@@ -27,14 +28,17 @@ $peticionAjax=true;
             <label for="cantidad_producto">Cantidad</label>
             <input type="text" id="cantidad_producto" name="cantidad_producto">
             <span class="boton-mas-venta">✔</span>
-    </form>
-</div>
 
         <div class="ventas">
         </div>
         <div id="total">
 
         </div>
+
+        <input type="submit" value="Finalizar venta">
+        </form>
+</div>
+
 </div>
 <a class="home" onclick="history.back()"><span class="icon-undo2"></span></a>
 

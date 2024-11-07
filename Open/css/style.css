@@ -146,6 +146,24 @@
   width: 100px;
 }
 
+.ventas-interior .main-container {
+  width: 100%;
+  margin: 20px auto;
+}
+.ventas-interior .main-container .form-grid {
+  width: 100%;
+  height: 100%;
+}
+.ventas-interior .main-container .form-grid .div-search-1 {
+  margin-bottom: 60px;
+}
+.ventas-interior .main-container .form-grid .div-search-1 #total {
+  font-size: 50px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
 html {
   padding: 0;
   margin: 0;
